@@ -137,7 +137,17 @@ export default async function Home() {
           height={245}
         />
       </div>
-      
+       {events?.length ? (
+        <div className="bg-zinc-900 text-site pt-16 sm:p-20">
+          <Events events={events} />
+        </div>
+      ) : (
+        <div className="text-3xl w-full text-center p-9 box-border max-w-4xl mx-auto">
+        
+         
+          
+        </div>
+      )}
       {productsForCategories.length ? (
         <div className="flex gap-2 sm:gap-14 px-14 flex-col sm:flex-row">
           <div className="text-custom-1 text-center sm:text-left pt-10 sm:py-20 basis-1/2">
