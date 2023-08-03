@@ -143,16 +143,12 @@ export default async function Home() {
         </div>
       ) : (
         <div className="text-3xl w-full text-center p-9 box-border max-w-4xl mx-auto">
-          
           <a
             href="https://manage.wix.com/account/site-selector?actionUrl=https%3A%2F%2Fmanage.wix.com%2Fdashboard%2F%7BmetaSiteId%7D%2Fevents%3FreferralInfo%3DHeadless"
             target="_blank"
             rel="noreferrer"
             className="text-purple-500"
-          >
-            
-
-
+          > </a>
         </div>
       )}
       {productsForCategories.length ? (
