@@ -11,7 +11,7 @@ const Header = () => (
     >
       <div className="flex px-6 sm:px-14 h-header items-center gap-4 sm:gap-8">
         <h2 className="flex-1">
-          <a href="/"><img  width={250} src="https://cdn.webtrio.net/logo-black.png"></img></a>
+          <a href="/"><img  width={200} src="https://cdn.webtrio.net/logo-black.png"></img></a>
         </h2>
         <div>
           <Login />
