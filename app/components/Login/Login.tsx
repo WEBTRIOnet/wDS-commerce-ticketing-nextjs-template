@@ -4,6 +4,7 @@ import Cookies from 'js-cookie';
 import dynamic from 'next/dynamic';
 import { WIX_REFRESH_TOKEN } from '@app/constants';
 import { useUI } from '@app/components/Provider/context';
+import { DEFAULT_SERIF_FONT } from 'next/dist/shared/lib/constants';
 
 const LoginComp = () => {
   const { openModalLogin } = useUI();
@@ -20,7 +21,7 @@ const LoginComp = () => {
     openModalLogin();
   };
   return (
-    <button onClick={onLoginClick} className="flex relative">
+    <button onClick={onLoginClick} className="flex relative" >
       {isLoggedIn ? 'Log Out' : 'Log In'}
     </button>
   );
