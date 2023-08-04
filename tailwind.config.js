@@ -16,7 +16,7 @@ module.exports = {
         site: 'rgb(255,249,246)',
       },
       fontSize: {
-        12: '12px',
+        12: '11px',
       },
       keyframes: {
         fade: {
