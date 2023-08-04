@@ -56,13 +56,13 @@ export default async function Home() {
               data-testid={testIds.HOME_PAGE.HEADER}
             >
               <h1 className="text-5xl sm:text-[120px] leading-none animate-fade-in">
-                USA
-                <br /> SUMMER
-                <br /> TOUR
+                Open 
+                <br /> WEBtrio
+                <br /> Shop
               </h1>
               <h3 className="text-base sm:text-2xl py-6">
-                A NEW ALBUM BY{' '}
-                <span className="text-purple-500">TALI$A KIDD</span>
+                A Shoping Gateway by {' '}
+                <span className="text-purple-500">WEBtrio</span>
               </h3>
               <div className="flex text-gray-700 gap-4 justify-center sm:justify-start">
                 <svg
@@ -156,21 +156,19 @@ export default async function Home() {
         </div>
       )}
       {productsForCategories.length ? (
-        <div className="flex gap-2 sm:gap-14 px-14 flex-col sm:flex-row">
+        <div className="flex gap-2 sm:gap-14 px-13 flex-col sm:flex-row">
           <div className="text-custom-1 text-center sm:text-left pt-10 sm:py-20 basis-1/2">
             <h1 className="uppercase text-4xl sm:text-7xl text-center sm:text-left text-black">
-              Merch
+             Showcase
             </h1>
             <p className="text-lg my-10 text-black">
-              I am a paragraph. I’m a great space to write about what makes the
-              products special and explain how customers can benefit from these
-              items.
+              Hey Buddy, Select you items by category
             </p>
             <a
               href="/shop"
               className="btn-main rounded-2xl text-base px-8 py-2.5"
             >
-              Get Merch
+              Get All
             </a>
             {productsForCategories[1]?.product?.media?.mainMedia ? (
               <div className="mt-10 sm:mt-[300px]">
@@ -180,8 +178,8 @@ export default async function Home() {
                       productsForCategories[1]?.product!.media!.mainMedia!
                         .image!.url!
                     }
-                    width={800}
-                    height={800}
+                    width={500}
+                    height={500}
                     alt={
                       productsForCategories[1]?.product!.media!.mainMedia!
                         .image!.altText!
@@ -241,17 +239,10 @@ export default async function Home() {
         </div>
       ) : (
         <div className="text-3xl w-full text-center p-9 box-border max-w-4xl mx-auto">
-          No categories found. Click{' '}
-          <a
-            href="https://manage.wix.com/account/site-selector?actionUrl=+https%3A%2F%2Fmanage.wix.com%2Fdashboard%2F%7BmetaSiteId%7D%2Fstore%2Fcategories%2Flist%3FreferralInfo%3DHeadless"
-            target="_blank"
-            rel="noreferrer"
-            className="text-purple-500"
-          >
-            here
-          </a>{' '}
-          to go to the business dashboard to create event categories. Once
-          added, they will appear here.
+          No categories found. 
+         
+        
+        
         </div>
       )}
     </div>
